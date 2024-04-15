@@ -10,9 +10,7 @@ public class Ejercicio1 {
 
    
     public static void main(String[] args) {
-    
         Scanner notas = new Scanner(System.in);
-        
         System.out.println("Ingrese la nota de Programacion II:");
         int x = notas.nextInt();//la nota solo puede ser cargada como un entero.
        if(x==10){
@@ -23,11 +21,6 @@ public class Ejercicio1 {
        }      
        else if(x<4){   
         System.out.println("El alumnno esta desaprobbado en la materia;su nota es:"+x);
-       }    
-    }   
-   
-    
-
-    
-    
-
+       }          
+    }  
+}
