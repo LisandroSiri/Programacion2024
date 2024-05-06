@@ -14,17 +14,15 @@ public class Electrodomesticos {
     public Electrodomesticos(String electrodomestico, double consumo){
         this.electrodomestico= electrodomestico;
         this.consumo= consumo;
-    }    
-    public double CalcularGasto(double consumo1,double consumo2,double consumo3,double consumo4,double consumo5,double consumo6,){
-        double gastototal;
-        for(int i=0; i<6; i++)
-         gastototal +=  consumo[i]; 
-        
-    }
-    
-   public double CalcularAhorro(double consumo){
-          double ahorro = sqrt(consumo);
-          return ahorro;
+    }   
+       public void Calcularconsumos(){
+           System.out.println("El consumo anual del electrodomestico es:"+consumo);
+            double ahorro;
+            ahorro = sqrt(consumo);
+            round(ahorro);
+            System.out.println("El consumo anual reducido del electrodomestico es:"+ahorro);
+           
+          
        }
         
    }
