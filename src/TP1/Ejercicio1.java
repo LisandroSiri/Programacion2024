@@ -21,6 +21,6 @@ public class Ejercicio1 {
        }      
        else if(x<4){   
         System.out.println("El alumnno esta desaprobbado en la materia;su nota es:"+x);
-       }          
+       }     
     }  
 }

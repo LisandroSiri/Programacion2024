@@ -12,5 +12,20 @@ public class TestElectrodomesticos {
        Electrodomesticos electrodomestico4 = new Electrodomesticos("Heladera",637.00);
        Electrodomesticos electrodomestico5 = new Electrodomesticos("Aire acondicionado",1264.00);
        Electrodomesticos electrodomestico6 = new Electrodomesticos("Pava electrica",25.00);
+       
+       electrodomestico1.Calcularconsumos();
+       
+       electrodomestico2.Calcularconsumos();
+       
+       electrodomestico3.Calcularconsumos();
+       
+       electrodomestico4.Calcularconsumos();
+       
+       electrodomestico5.Calcularconsumos();
+       
+       electrodomestico6.Calcularconsumos();
+       
+       
+       
     }
 }
