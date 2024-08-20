@@ -1,5 +1,5 @@
 
-package TP4;
+package PlataformaStream;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -14,23 +14,25 @@ public class ContenidoMulti {
         this.repro = repro;
         this.titulo = titulo;
     }
+    public int getCalificacion(){
+        return calificacion;
+    }
     
     public void reproducir(){
         JOptionPane.showMessageDialog(null, "reproduciendo: "+titulo, titulo+".mp4",2);
     }
-    public void Info(){
-        System.out.println("Titulo:"+titulo+
+
+    
+    public String Info(){
+        return "Titulo:"+titulo+
                 "\nCalificaion:"+calificacion+
                 "\nAño:"+año+
                 "\nDuracion:"+duracion+
-                "\nReproducciones"+repro);
+                "\nReproducciones"+repro;
+        
     }
     
-   /* public String popularidad(){
-        for(ContenidoMulti  : repro ){
-            
-        }
-    }*/
- 
+
+    
  
 }
