@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package PlataformaStream;
+package TP4;
 
 /**
  *
@@ -17,13 +17,13 @@ public class Documental extends ContenidoMulti{
     }
     
     @Override
-        public String Info(){
-        return "Titulo:"+titulo+
+        public void Info(){
+        System.out.println("Titulo:"+titulo+
                 "\nCalificaion:"+calificacion+
                 "\nAño:"+año+
                 "\nDuracion:"+duracion+
                 "\nReproducciones:"+repro+
-                "\nTema:"+tema ;
+                "\nTema:"+tema );
     }
 }
     

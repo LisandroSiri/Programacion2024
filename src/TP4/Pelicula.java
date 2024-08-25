@@ -2,30 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package PlataformaStream;
+package TP4;
 
 /**
  *
  * @author Lisandro
  */
-public class Serie extends ContenidoMulti{
-    public int temporada, capitulosxt;
+public class Pelicula extends ContenidoMulti{
+    public String director;
     
-    public Serie (int calificacion, int año, int duracion, int repro, String titulo,int temporada, int capitulosxt){
+    public Pelicula (int calificacion, int año, int duracion, int repro, String titulo,String director){
         super(calificacion,año,duracion,repro,titulo);
-        this.capitulosxt = capitulosxt;
-        this.temporada = temporada;
-
+        this.director = director;
+   
     }
     
     @Override
-            public String Info(){
-        return "Titulo:"+titulo+
+    public void Info(){
+        System.out.println("Titulo:"+titulo+
                 "\nCalificaion:"+calificacion+
                 "\nAño:"+año+
                 "\nDuracion:"+duracion+
                 "\nReproducciones:"+repro+
-                "\nTemporadas:"+temporada+
-                "\nCapitulos por Temporadas:"+capitulosxt;
+                "\nDirector:"+director );
     }
 }
